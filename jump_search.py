@@ -1,6 +1,6 @@
 from pytictoc import TicToc
 
-from core import linear_search
+from core import jump_search
 
 seq = [10, 77, 80, 61, 36, 1, 36, 36, 5, 23, 72, 35, 41, 75, 23, 16, 97, 68, 44, 65, 59, 11, 73, 78, 53, 70, 53, 2, 64,
        41, 97, 12, 47, 91, 44, 97, 81, 67, 99, 13, 66, 92, 52, 88, 73, 39, 29, 55, 25, 43, 43, 52, 47, 22, 60, 3, 53,
@@ -51,7 +51,7 @@ target = 42
 
 def run():
     with TicToc():
-        idx = linear_search.run(seq, target)
+        idx = jump_search.run(seq, target)
         print('Found target=', target, 'at index=', idx)
 
 
