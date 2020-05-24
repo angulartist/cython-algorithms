@@ -1,7 +1,7 @@
 cpdef list run(list collection):
     cdef:
-        int length = len(collection)
-        int i, j
+        unsigned int length = len(collection)
+        unsigned int i, j
         bint swapped
 
     for i in range(length - 1):

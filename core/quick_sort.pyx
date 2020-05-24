@@ -1,6 +1,6 @@
 cpdef list run(list collection):
     cdef:
-        int length = len(collection)
+        unsigned int length = len(collection)
         int pivot, element
         list greater, lesser
 
