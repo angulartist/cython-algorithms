@@ -1,4 +1,4 @@
-cpdef run(list collection):
+cpdef list run(list collection):
     cdef:
         int length = len(collection)
         int i, j
